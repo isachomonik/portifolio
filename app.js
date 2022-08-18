@@ -5,9 +5,9 @@ const express = require('express');
 const app = express();
 
 // 3 - Importar e usar o roteador
-const router = require('./src/router')
+const router = require('./src/router');
 
-app.use('/', router);
+app.use('/pessoas', router);
 
 // 4 - Rodar a aplicação (app.listen)
 app.listen(3000, () => {console.log("Server running on port 3000")})
